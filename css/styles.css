@@ -312,6 +312,11 @@ body {
 .team-item:last-child {
   margin-right: 0px;
 }
+/* clients */
+.clients-list {
+  display: flex;
+  outline: 1px red solid;
+}
 /* footer */
 
 .footer {
@@ -390,6 +395,7 @@ body {
   justify-content: center;
   width: 206px;
 }
+
 .join-link {
   display: flex;
   align-items: center;
