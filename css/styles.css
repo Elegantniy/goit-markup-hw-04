@@ -345,7 +345,32 @@ body {
 /* clients */
 .clients-list {
   display: flex;
-  outline: 1px red solid;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+}
+.clients-list-item {
+  width: calc((100% - 150px) / 6);
+}
+.clients-link {
+  border: 1px solid var(--soc-icon);
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+}
+.clients-link:hover,
+.clients-link:focus {
+  border-color: var(--primary-action-color);
+}
+.clients-link:hover .clients-icon,
+.clients-link:focus .clients-icon {
+  fill: var(--primary-action-color);
+}
+.clients-icon {
+  fill: var(--soc-icon);
 }
 /* footer */
 
@@ -434,11 +459,12 @@ body {
   height: 44px;
   border-radius: 50%;
 }
-.join-link:hover, .join-link:focus {
+.join-link:hover,
+.join-link:focus {
   background-color: var(--primary-action-color);
 }
 .join-soc-icon {
-  fill: var(--white-color)
+  fill: var(--white-color);
 }
 
 /* portfolio.html */
