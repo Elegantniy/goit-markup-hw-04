@@ -368,16 +368,16 @@ body {
 .footer-icon {
   display: flex;
 }
-
+/* join */
 .join {
   margin-left: 70px;
 }
 .join-list a {
   text-decoration: none;
   color: var(--white-color);
-  background-color: rgba(255, 255, 255, 0.1)
+  background-color: rgba(255, 255, 255, 0.1);
 }
-.join-title{
+.join-title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -390,7 +390,7 @@ body {
   justify-content: center;
   width: 206px;
 }
-.join-link{
+.join-link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -399,7 +399,7 @@ body {
   border-radius: 50%;
 }
 .join-link:hover {
-  background-color: var(--primary-action-color) ;
+  background-color: var(--primary-action-color);
 }
 
 /* portfolio.html */
