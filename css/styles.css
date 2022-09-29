@@ -24,6 +24,7 @@ font-family: 'Roboto', sans-serif; */
   --black-color: #000000;
   --shadow-project: 0px 1px 1px rgba(0, 0, 0, 0.12),
     0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  --soc-icon: #afb1b8;
 }
 /* index.html */
 body {
@@ -301,25 +302,31 @@ body {
   display: flex;
   justify-content: center;
   padding: 0 32px 30px 32px;
-  gap: 10px
+  gap: 10px;
 }
 .team-soc-item {
   width: calc((100% - 30px) / 4);
 }
 
-.team-soc-link{
+.team-soc-link {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  background-color: red;
 }
-.team-soc-link:hover, .team-soc-link:focus {
+.team-soc-icon {
+  fill: var(--soc-icon);
+}
+.team-soc-link:hover,
+.team-soc-link:focus {
   background-color: var(--primary-action-color);
 }
-
+.team-soc-link:hover .team-soc-icon,
+.team-soc-link:focus .team-soc-icon {
+  fill: var(--white-color);
+}
 .team-item {
   display: inline-block;
   background-color: var(--white-color);
@@ -427,8 +434,11 @@ body {
   height: 44px;
   border-radius: 50%;
 }
-.join-link:hover {
+.join-link:hover, .join-link:focus {
   background-color: var(--primary-action-color);
+}
+.join-soc-icon {
+  fill: var(--white-color)
 }
 
 /* portfolio.html */
