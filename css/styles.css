@@ -208,18 +208,18 @@ body {
   background-position: center;
 }
 .features-list-item.icon-antenna::before {
-  background-image: url(../images/features/antenna\ 1.svg);
+  background-image: url(../images/features/antenna.svg);
 }
 .features-list-item.icon-clock::before {
-  background-image: url(../images/features/clock\ 1.svg);
+  background-image: url(../images/features/clock.svg);
 }
 
 .features-list-item.icon-diagram::before {
-  background-image: url(../images/features/diagram\ 1.svg);
+  background-image: url(../images/features/diagram.svg);
 }
 
 .features-list-item.icon-astronaut::before {
-  background-image: url(../images/features/astronaut\ 1.svg);
+  background-image: url(../images/features/astronaut.svg);
 }
 
 .features-title {
