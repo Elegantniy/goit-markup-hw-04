@@ -22,6 +22,7 @@ font-family: 'Roboto', sans-serif; */
   --bckg-footer-color: #2f303a;
   --white-color: #ffffff;
   --black-color: #000000;
+  --shadow-project: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 /* index.html */
 body {
@@ -144,7 +145,11 @@ body {
 
 .hero {
   background-color: var(--bckg-footer-color);
-  background-image:linear-gradient( rgba(47,48,58,0.4),rgba(47,48,58,0.4) ), url(../images/hero/bckg.jpg);
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero/bckg.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -388,6 +393,9 @@ body {
   border: 1px solid #ececec;
   max-width: 370px;
   width: calc((100% - 60px) / 3);
+}
+.project-card:hover, .project-card:focus {
+  box-shadow: var(--shadow-project);
 }
 .project-info {
   padding: 20px 24px;
