@@ -548,6 +548,7 @@ body {
 
 .project-link {
   display: block;
+  text-decoration: none;
 }
 
 .project-link:hover,
