@@ -25,6 +25,7 @@ font-family: 'Roboto', sans-serif; */
   --shadow-project: 0px 1px 1px rgba(0, 0, 0, 0.12),
     0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
   --soc-icon: #afb1b8;
+  --header-icon:#757575;
 }
 /* index.html */
 body {
@@ -83,7 +84,7 @@ body {
   color: var(--primary-action-color);
 }
 .header-logo-link {
-  color: #000000;
+  color: var(--black-color);
   text-decoration: none;
   font-family: "Raleway";
   font-style: normal;
@@ -141,7 +142,7 @@ body {
 }
 .icon-header {
   margin-right: 10px;
-  fill: #757575;
+  fill: var(--header-icon);
 }
 .contact-link-item:hover .icon-header,
 .contact-link-item:focus .icon-header {
@@ -166,10 +167,10 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  max-width: 1600px;
   text-align: center;
   padding: 200px 0;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
 }
 
 .hero-title {
