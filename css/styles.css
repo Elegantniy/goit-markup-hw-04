@@ -25,7 +25,7 @@ font-family: 'Roboto', sans-serif; */
   --shadow-project: 0px 1px 1px rgba(0, 0, 0, 0.12),
     0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
   --soc-icon: #afb1b8;
-  --header-icon:#757575;
+  --header-icon: #757575;
 }
 /* index.html */
 body {
@@ -135,7 +135,6 @@ body {
   letter-spacing: 0.02em;
 }
 
-
 .contact-link-item:hover,
 .contact-link-item:focus {
   color: var(--primary-action-color);
@@ -208,11 +207,12 @@ body {
 }
 .features-list-item {
   width: 270px;
-}
-
-.features-list-item::before {
   content: "";
   display: block;
+}
+
+.features-text {
+  display: flex;
   height: 120px;
   background-color: var(--second-bckd-color);
   margin-bottom: 30px;
@@ -220,10 +220,14 @@ body {
   background-repeat: no-repeat;
   background-position: center;
 }
-.features-list-item.icon-antenna::before {
-  background-image: url(../images/features/antenna.svg);
+.features-icon {
+  margin: 0 auto;
 }
-.features-list-item.icon-clock::before {
+
+/* .features-list-item.icon-antenna::before {
+  background-image: url(../images/features/antenna.svg);
+} */
+/* .features-list-item.icon-clock::before {
   background-image: url(../images/features/clock.svg);
 }
 
@@ -233,7 +237,7 @@ body {
 
 .features-list-item.icon-astronaut::before {
   background-image: url(../images/features/astronaut.svg);
-}
+} */
 
 .features-title {
   color: var(--primary-title-color);
@@ -313,11 +317,7 @@ body {
 .team-soc-list {
   display: flex;
   justify-content: center;
-  padding: 0 32px 30px 32px;
   gap: 10px;
-}
-.team-soc-item {
-  width: calc((100% - 30px) / 4);
 }
 
 .team-soc-link {
@@ -392,6 +392,7 @@ body {
 }
 .footer .container {
   display: flex;
+  align-items: baseline;
 }
 
 .footer-logo-link {
@@ -435,9 +436,6 @@ body {
 .footer-contact-link:hover,
 .footer-contact-link:focus {
   color: var(--primary-action-color);
-}
-.footer .container {
-  align-items: baseline;
 }
 
 .footer-icon {
@@ -547,8 +545,13 @@ body {
 .project-card img {
   max-width: 100%;
 }
-.project-card:hover,
-.project-card:focus {
+
+.project-link {
+  display: block;
+}
+
+.project-link:hover,
+.project-link:focus {
   box-shadow: var(--shadow-project);
 }
 .project-info {
